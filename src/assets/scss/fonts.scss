@@ -1,0 +1,12 @@
+// https://open-foundry.com/fonts/young_serif_regular
+@font-face {
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/YoungSerif-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+.young-serif {
+  font-family: "Young Serif";
+}
