@@ -1,0 +1,78 @@
+{
+  "abordage": {
+    "name": "Abordage",
+    "class": "ff-abordage",
+    "src": [
+      {
+        "400": "fonts/Abordage-Regular.woff2"
+      }
+    ],
+    "tags": ["sans", "head", "body"],
+    "credit": "Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel",
+    "creditFoundry": "Velvetyne",
+    "creditLink": "https://velvetyne.fr/fonts/degheest/",
+    "license": "SIL Open Font License, Version 1.1",
+    "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+  },
+  "basalte": {
+    "name": "Basalte",
+    "class": "ff-basalte",
+    "src": [
+      {
+        "400": "fonts/Basalte-Fond.woff2"
+      }
+    ],
+    "tags": ["sans", "head"],
+    "credit": "Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel",
+    "creditFoundry": "Velvetyne",
+    "creditLink": "https://velvetyne.fr/fonts/degheest/",
+    "license": "SIL Open Font License, Version 1.1",
+    "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+  },
+  "basteleur": {
+    "name": "Basteleur",
+    "class": "ff-basteleur",
+    "src": [
+      {
+        "400": "fonts/Basteleur-Moonlight.woff2",
+        "700": "fonts/Basteleur-Bold.woff2"
+      }
+    ],
+    "tags": ["serif", "head"],
+    "credit": "Keussel",
+    "creditFoundry": "Velvetyne",
+    "creditLink": "https://velvetyne.fr/fonts/basteleur/",
+    "license": "SIL Open Font License, Version 1.1",
+    "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+  },
+  "director": {
+    "name": "Director",
+    "class": "ff-director",
+    "src": [
+      {
+        "var": "fonts/Director-Variable.woff2"
+      }
+    ],
+    "tags": ["serif", "mono"],
+    "credit": "Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel",
+    "creditFoundry": "Velvetyne",
+    "creditLink": "https://velvetyne.fr/fonts/degheest/",
+    "license": "SIL Open Font License, Version 1.1",
+    "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+  },
+  "equateur": {
+    "name": "Equateur",
+    "class": "ff-equateur",
+    "src": [
+      {
+        "400": "fonts/Equateur-Regular.woff2"
+      }
+    ],
+    "tags": ["serif", "body", "head"],
+    "credit": "Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel",
+    "creditFoundry": "Velvetyne",
+    "creditLink": "https://velvetyne.fr/fonts/degheest/",
+    "license": "SIL Open Font License, Version 1.1",
+    "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+  }
+}

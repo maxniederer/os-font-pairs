@@ -1,4 +1,37 @@
-// https://open-foundry.com/fonts/young_serif_regular
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// YOUNG SERIF
+
 @font-face {
   font-family: "Young Serif";
   font-style: normal;
@@ -6,7 +39,202 @@
   src: url("../fonts/YoungSerif-Regular.woff2") format("woff2");
   font-display: swap;
 }
-
-.young-serif {
+.ff-young-serif {
   font-family: "Young Serif";
+}
+
+//BASTELEUR
+
+@font-face {
+  font-family: "Basteleur";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Basteleur-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basteleur";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Basteleur-Moonlight.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-basteleur {
+  font-family: "Basteleur";
+}
+
+// DEGHEEST - EQUATEUR
+
+@font-face {
+  font-family: "Abordage";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Abordage-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-abordage {
+  font-family: "Abordage";
+}
+
+// DEGHEEST - EQUATEUR
+
+@font-face {
+  font-family: "Equateur";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Equateur-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-equateur {
+  font-family: "Equateur";
+}
+
+// DEGHEEST - LATITUDE
+
+@font-face {
+  font-family: "Latitude";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Latitude-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-latitude {
+  font-family: "Latitude";
+}
+
+// KARRIK
+
+@font-face {
+  font-family: "Karrik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Karrik-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karrik";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Karrik-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-karrik {
+  font-family: "Karrik";
+}
+
+// MANROPE
+
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 200;
+//   src: url("../fonts/manrope-v15-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url("../fonts/manrope-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("../fonts/manrope-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url("../fonts/manrope-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url("../fonts/manrope-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: "Manrope";
+//   font-style: normal;
+//   font-weight: 800;
+//   src: url("../fonts/manrope-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 900;
+  src: url("../fonts/ManropeGX.woff2") format("woff2 supports variations");
+  src: url("../fonts/ManropeGX.woff2") format("woff2-variations");
+  font-display: swap;
+}
+.ff-manrope {
+  font-family: "Manrope";
+}
+
+// SLIGOIL
+
+@font-face {
+  font-family: "Sligoil";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Sligoil-Micro.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-sligoil {
+  font-family: "Sligoil";
+}
+
+// SLIGOIL
+
+@font-face {
+  font-family: "Director";
+  font-style: normal;
+  font-weight: 100 1000;
+  src: url("../fonts/Director-Variable.woff2")
+    format("woff2 supports variations");
+  src: url("../fonts/Director-Variable.woff2") format("woff2-variations");
+  font-display: swap;
+}
+.ff-director {
+  font-family: "Director";
+}
+
+//  LOUISE
+
+@font-face {
+  font-family: "Louise";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Louise-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-louise {
+  font-family: "Louise";
+}
+
+// BASALTE
+
+@font-face {
+  font-family: "Basalte";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Basalte-Fond.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-basalte {
+  font-family: "Basalte";
 }

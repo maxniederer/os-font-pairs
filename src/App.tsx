@@ -1,33 +1,65 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { useState, useEffect } from "react";
+import Card from "./components/Card";
+import { List, Shuffle, Info } from "@phosphor-icons/react";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <nav className="padding">
+        <ul className="flex">
+          <li>
+            <a className="strong">fontcupid</a>
+          </li>
+          <li>
+            <a>fonts</a>
+          </li>
+          <li>
+            <a>pairings</a>
+          </li>
+          <li>
+            <a>about</a>
+          </li>
+          <li className="">
+            <a>menu</a>
+            <button>
+              <List size={32} />
+            </button>
+            <button>
+              <Info size={32} />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div className="alert padding">
+        <p>click here for asdjkfhasjkdf</p>
       </div>
-      <h1 className="young-serif">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="padding">
+        <h1>fontcupid</h1>
+        <p>find the perfect matches of open source web fonts</p>
+        <button>
+          <Shuffle size={32} />
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <Card headFont="basteleur" bodyFont="manrope" />
+        <Card headFont="basalte" bodyFont="sligoil" />
+        <h6 className="ff-manrope fw-200">manrope</h6>
+        <h6 className="ff-manrope fw-400">manrope</h6>
+        <h6 className="ff-manrope fw-600">manrope</h6>
+        <h6 className="ff-manrope fw-800">manrope</h6>
+        <h1 className="ff-basteleur fw-400">basteleur</h1>
+        <h1 className="ff-basteleur">basteleur-bold</h1>
+        <h1 className="ff-young-serif">young-serif</h1>
+        <h1 className="ff-abordage">abordage</h1>
+        <h1 className="ff-equateur">equateur</h1>
+        <h1 className="ff-latitude">latitude</h1>
+        <h1 className="ff-karrik">karrik</h1>
+        <h1 className="ff-karrik italic">karrik-italic</h1>
+        <h1 className="ff-director">director</h1>
+        <h1 className="ff-sligoil">sligoil</h1>
+        <h1 className="ff-louise">louise</h1>
+        <h1 className="ff-basalte">basalte</h1>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

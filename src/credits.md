@@ -1,0 +1,5 @@
+- Degheest by Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel. Distributed by velvetyne.fr.
+- Basteleur by Keussel. Distributed by velvetyne.fr.
+- Sligoil by Ariel Martín Pérez. Distributed by velvetyne.fr.
+- Young Serif by Bastien Sozeau. Distributed by Open Foundry.
+- Karrik by Jean-Baptiste Morizot, Lucas Le Bihan. Distributed by velvetyne.fr.
