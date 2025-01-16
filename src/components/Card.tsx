@@ -46,7 +46,13 @@ function Card({ headFont, bodyFont }: Props) {
           sequi neque laboriosam porro expedita soluta rem amet, enim vero illo
           voluptatibus commodi earum nesciunt fuga ipsa eos hic dolorum. Ex.
         </p>
-        <Slider min={0.5} max={2.0} step={0.1} val={1.0} passValue={passSize} />
+        <Slider
+          min={0.5}
+          max={2.0}
+          step={0.0625}
+          val={1.0}
+          passValue={passSize}
+        />
         <Slider
           min={100}
           max={900}

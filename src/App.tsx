@@ -1,9 +1,40 @@
 import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import { List, Shuffle, Info } from "@phosphor-icons/react";
+import json from "./assets/fonts.json";
+
+interface Font {
+  name: string;
+  class: string;
+  src: {
+    100?: string;
+    200?: string;
+    300?: string;
+    400?: string;
+    500?: string;
+    600?: string;
+    700?: string;
+    800?: string;
+    900?: string;
+    var?: string;
+  };
+  credit: {
+    author: string;
+    foundry: string;
+    link: string;
+    license: string;
+    licenseLink: string;
+  };
+  tags: string[];
+}
 
 function App() {
-  const [count, setCount] = useState(0);
+  // function printAllFonts() {
+  //   json.forEach((element) => {
+  //     console.log(element);
+  //   });
+  // }
+  // printAllFonts();
 
   return (
     <>
@@ -35,7 +66,7 @@ function App() {
       <div className="alert padding">
         <p>click here for asdjkfhasjkdf</p>
       </div>
-      <div className="padding">
+      <main className="padding">
         <h1>fontcupid</h1>
         <p>find the perfect matches of open source web fonts</p>
         <button>
@@ -43,23 +74,12 @@ function App() {
         </button>
         <Card headFont="basteleur" bodyFont="manrope" />
         <Card headFont="basalte" bodyFont="sligoil" />
-        <h6 className="ff-manrope fw-200">manrope</h6>
-        <h6 className="ff-manrope fw-400">manrope</h6>
-        <h6 className="ff-manrope fw-600">manrope</h6>
-        <h6 className="ff-manrope fw-800">manrope</h6>
-        <h1 className="ff-basteleur fw-400">basteleur</h1>
-        <h1 className="ff-basteleur">basteleur-bold</h1>
-        <h1 className="ff-young-serif">young-serif</h1>
-        <h1 className="ff-abordage">abordage</h1>
-        <h1 className="ff-equateur">equateur</h1>
-        <h1 className="ff-latitude">latitude</h1>
-        <h1 className="ff-karrik">karrik</h1>
-        <h1 className="ff-karrik italic">karrik-italic</h1>
-        <h1 className="ff-director">director</h1>
-        <h1 className="ff-sligoil">sligoil</h1>
-        <h1 className="ff-louise">louise</h1>
-        <h1 className="ff-basalte">basalte</h1>
-      </div>
+        {json.map((font) => (
+          <>
+            <h1 className={font.class}>{font.name}</h1>
+          </>
+        ))}
+      </main>
     </>
   );
 }
