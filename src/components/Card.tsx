@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Slider from "./Slider";
+import Font from "./Font";
 
 interface Props {
-  headFont: string;
-  bodyFont: string;
+  headFont: Font;
+  bodyFont: Font;
 }
 
 function Card({ headFont, bodyFont }: Props) {
@@ -30,11 +31,11 @@ function Card({ headFont, bodyFont }: Props) {
   return (
     <>
       <div className="card">
-        <h1 className={"ff-" + headFont} contentEditable="true">
+        <h1 className={headFont.class} contentEditable="true">
           Paralinear Aesthetics
         </h1>
         <p
-          className={"ff-" + bodyFont}
+          className={bodyFont.class}
           contentEditable="true"
           style={{
             fontWeight: weight,
@@ -68,13 +69,12 @@ function Card({ headFont, bodyFont }: Props) {
           passValue={passHeight}
         />
         <p className="sub">
-          featuring:{" "}
           <a href="#" className="inline">
-            {headFont}
+            {headFont.name}
           </a>{" "}
           &{" "}
           <a href="#" className="inline">
-            {bodyFont}
+            {bodyFont.name}
           </a>
         </p>
       </div>

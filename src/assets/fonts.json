@@ -74,5 +74,81 @@
       "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
     },
     "tags": ["serif", "body", "head"]
+  },
+  {
+    "name": "Karrik",
+    "class": "ff-karrik",
+    "src": {
+      "400": "fonts/Karrik-Regular.woff2",
+      "400i": "fonts/Karrik-Italic.woff2"
+    },
+    "credit": {
+      "credit": "Jean-Baptiste Morizot, Lucas Le Bihan",
+      "foundry": "Velvetyne",
+      "link": "https://velvetyne.fr/fonts/karrik/",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["sans", "body", "head"]
+  },
+  {
+    "name": "Latitude",
+    "class": "ff-latitude",
+    "src": {
+      "400": "fonts/Latitude-Regular.woff2"
+    },
+    "credit": {
+      "credit": "Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel",
+      "foundry": "Velvetyne",
+      "link": "https://velvetyne.fr/fonts/degheest/",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["serif", "body", "head"]
+  },
+  {
+    "name": "Manrope",
+    "class": "ff-manrope",
+    "src": {
+      "var": "fonts/ManropeGX.woff2"
+    },
+    "credit": {
+      "credit": "Mikhail Sharanda",
+      "foundry": "Google Fonts",
+      "link": "https://github.com/davelab6/manrope",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["sans", "body", "head"]
+  },
+  {
+    "name": "Sligoil",
+    "class": "ff-sligoil",
+    "src": {
+      "var": "fonts/Sligoil-Micro.woff2"
+    },
+    "credit": {
+      "credit": "Ariel Martín Pérez",
+      "foundry": "Velvetyne",
+      "link": "https://velvetyne.fr/fonts/sligoil/",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["mono", "body", "head"]
+  },
+  {
+    "name": "Young Serif",
+    "class": "ff-young-serif",
+    "src": {
+      "var": "fonts/YoungSerif-Regular.woff2"
+    },
+    "credit": {
+      "credit": "Bastien Sozeau",
+      "foundry": "upload.fr",
+      "link": "https://github.com/uplaod/YoungSerif",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["serif", "body", "head"]
   }
 ]
