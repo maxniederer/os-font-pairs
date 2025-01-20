@@ -1,6 +1,6 @@
-import { useState } from "react";
-import Slider from "./Slider";
 import Font from "./Font";
+import text from "../assets/text.json";
+import { useState } from "react";
 
 interface Props {
   headFont: Font;
@@ -10,25 +10,18 @@ interface Props {
 }
 
 function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
-  const [weight, setWeight] = useState(400);
-  const [height, setHeight] = useState(1.5);
-  const [size, setSize] = useState(1.0);
+  let headText: string = "";
+  let ind: number = Math.floor(Math.random() * text["head"].length);
+  headText = text["head"][ind];
 
-  function passWeight(childData: number) {
-    setWeight(childData);
-  }
+  let bodyText: string = "";
+  ind = Math.floor(Math.random() * text["body"].length);
+  bodyText = text["body"][ind];
 
-  function passHeight(childData: number) {
-    setHeight(childData);
-  }
-
-  function passSize(childData: number) {
-    setSize(childData);
-  }
-
-  function toEm(num: number): string {
-    return num + "em";
-  }
+  let bodySize: string = "";
+  bodyText.length > 250 ? (bodySize = "1em") : (bodySize = "1.4em");
+  // let headSize: string = "";
+  // headText.length > 22 ? (headSize = "2em") : (headSize = "3em");
 
   return (
     <>
@@ -37,43 +30,16 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
         style={{ color: colorBody, backgroundColor: colorBg }}
       >
         <h1 className={headFont.class} contentEditable="true">
-          Paralinear Aesthetics
+          {headText}
         </h1>
         <p
           className={bodyFont.class}
           contentEditable="true"
-          style={{
-            fontWeight: weight,
-            lineHeight: height,
-            fontSize: toEm(size),
-          }}
+          style={{ fontSize: bodySize }}
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
-          sequi neque laboriosam porro expedita soluta rem amet, enim vero illo
-          voluptatibus commodi earum nesciunt fuga ipsa eos hic dolorum. Ex.
+          {bodyText}
         </p>
-        {/* <Slider
-          min={0.5}
-          max={2.0}
-          step={0.0625}
-          val={1.0}
-          passValue={passSize}
-        />
-        <Slider
-          min={100}
-          max={900}
-          step={100}
-          val={400}
-          passValue={passWeight}
-        />
-        <Slider
-          min={0.5}
-          max={2.0}
-          step={0.1}
-          val={1.5}
-          passValue={passHeight}
-        /> */}
-        <p className="sub">
+        <p className="sub card-credit">
           <a href="#" className="inline">
             {headFont.name}
           </a>{" "}
