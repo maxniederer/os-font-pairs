@@ -17,28 +17,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.card {
-  max-width: 500px;
-  border: 1px solid black;
-  padding: 16px;
+p {
+  max-width: 65ch;
 }
 
 .padding {
   padding-inline: 20px;
 }
 
-.flex {
-  display: flex;
-  gap: 20px;
+.sub {
+  font-style: italic;
 }
 
 .strong {
   font-weight: bold;
-}
-
-.alert {
-  background-color: var(--primary);
-  color: var(--background);
 }
 
 input {
@@ -48,4 +40,109 @@ input {
 .list {
   list-style-type: square;
   margin-left: 24px;
+}
+
+.inline {
+  text-decoration: underline;
+}
+
+// HEADER
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background);
+
+  nav {
+    padding-block: 2px;
+    // height: 28px;
+  }
+}
+
+.alert {
+  background-color: var(--primary);
+  color: var(--background);
+  height: 24px;
+
+  ul {
+    li::after {
+      content: "•";
+      margin-inline: 4px;
+    }
+  }
+}
+
+.marquee {
+  animation-name: marquee;
+  // animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  // position: absolute;
+  // white-space: nowrap;
+  // will-change: transform;
+  top: 20px;
+  left: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+// MAIN
+
+main {
+  margin-top: 70px;
+}
+
+.pairs {
+  display: grid;
+  gap: 22px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 1px solid black;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 18px;
+  height: 100%;
+
+  *:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+// FOOTER
+
+footer {
+  margin-block: 40px;
+}
+
+.bottom-nav {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.font-nav {
+  column-count: 3;
+  column-gap: 40px;
 }

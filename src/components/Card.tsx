@@ -5,9 +5,11 @@ import Font from "./Font";
 interface Props {
   headFont: Font;
   bodyFont: Font;
+  colorBody: string;
+  colorBg: string;
 }
 
-function Card({ headFont, bodyFont }: Props) {
+function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
   const [weight, setWeight] = useState(400);
   const [height, setHeight] = useState(1.5);
   const [size, setSize] = useState(1.0);
@@ -30,7 +32,10 @@ function Card({ headFont, bodyFont }: Props) {
 
   return (
     <>
-      <div className="card">
+      <div
+        className="card"
+        style={{ color: colorBody, backgroundColor: colorBg }}
+      >
         <h1 className={headFont.class} contentEditable="true">
           Paralinear Aesthetics
         </h1>
@@ -47,7 +52,7 @@ function Card({ headFont, bodyFont }: Props) {
           sequi neque laboriosam porro expedita soluta rem amet, enim vero illo
           voluptatibus commodi earum nesciunt fuga ipsa eos hic dolorum. Ex.
         </p>
-        <Slider
+        {/* <Slider
           min={0.5}
           max={2.0}
           step={0.0625}
@@ -67,12 +72,12 @@ function Card({ headFont, bodyFont }: Props) {
           step={0.1}
           val={1.5}
           passValue={passHeight}
-        />
+        /> */}
         <p className="sub">
           <a href="#" className="inline">
             {headFont.name}
           </a>{" "}
-          &{" "}
+          •{" "}
           <a href="#" className="inline">
             {bodyFont.name}
           </a>
