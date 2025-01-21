@@ -19,7 +19,7 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
   bodyText = text["body"][ind];
 
   let bodySize: string = "";
-  bodyText.length > 250 ? (bodySize = "1em") : (bodySize = "1.4em");
+  bodyText.length > 250 ? (bodySize = "1em") : (bodySize = "1.2em");
   // let headSize: string = "";
   // headText.length > 22 ? (headSize = "2em") : (headSize = "3em");
 
@@ -29,9 +29,9 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
         className="card"
         style={{ color: colorBody, backgroundColor: colorBg }}
       >
-        <h1 className={headFont.class} contentEditable="true">
+        <h2 className={headFont.class} contentEditable="true">
           {headText}
-        </h1>
+        </h2>
         <p
           className={bodyFont.class}
           contentEditable="true"
