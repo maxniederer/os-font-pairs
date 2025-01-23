@@ -1,6 +1,7 @@
 import Font from "./Font";
 import text from "../assets/text.json";
-import { useState } from "react";
+// import { useState } from "react";
+import { BookmarkSimple, Star, Heart } from "@phosphor-icons/react";
 
 interface Props {
   headFont: Font;
@@ -39,15 +40,20 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
         >
           {bodyText}
         </p>
-        <p className="sub card-credit">
-          <a href="#" className="inline">
-            {headFont.name}
-          </a>{" "}
-          •{" "}
-          <a href="#" className="inline">
-            {bodyFont.name}
-          </a>
-        </p>
+        <div className="card-credit">
+          <p className="sub ">
+            <a href="#" className="inline">
+              {headFont.name}
+            </a>
+            {" • "}
+            <a href="#" className="inline">
+              {bodyFont.name}
+            </a>
+          </p>
+          <button className="icon star">
+            <Heart size={22} />
+          </button>
+        </div>
       </div>
     </>
   );

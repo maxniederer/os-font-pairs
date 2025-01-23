@@ -15,6 +15,36 @@
     "tags": ["sans", "head", "body"]
   },
   {
+    "name": "Bagnard",
+    "class": "ff-bagnard",
+    "src": {
+      "400": "fonts/bagnard-latin-400-normal.woff2"
+    },
+    "credit": {
+      "credit": "Sebastien Sanfilippo",
+      "foundry": "Love Letters",
+      "link": "https://github.com/sebsan/Bagnard",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["serif", "head", "body"]
+  },
+  {
+    "name": "Bagnard Sans",
+    "class": "ff-bagnard-sans",
+    "src": {
+      "400": "fonts/bagnard-sans-latin-400-normal.woff2"
+    },
+    "credit": {
+      "credit": "Doug Thomas, Chris Fodge, May Kim",
+      "foundry": "Open Foundry",
+      "link": "https://github.com/dconstruct/Bagnard/",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["sans", "head", "body"]
+  },
+  {
     "name": "Basalte",
     "class": "ff-basalte",
     "src": {
@@ -73,7 +103,22 @@
       "license": "SIL Open Font License, Version 1.1",
       "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
     },
-    "tags": ["serif", "body", "head"]
+    "tags": ["serif", "head"]
+  },
+  {
+    "name": "Instrument Serif",
+    "class": "ff-instrument-serif",
+    "src": {
+      "400": "fonts/bagnard-latin-400-normal.woff2"
+    },
+    "credit": {
+      "credit": "Rodrigo Fuenzalida, Jordan Egstad",
+      "foundry": "Instrument",
+      "link": "https://github.com/Instrument/instrument-serif",
+      "license": "SIL Open Font License, Version 1.1",
+      "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+    },
+    "tags": ["serif", "head"]
   },
   {
     "name": "Karrik",
@@ -149,6 +194,6 @@
       "license": "SIL Open Font License, Version 1.1",
       "licenseLink": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
     },
-    "tags": ["serif", "body", "head"]
+    "tags": ["serif", "head"]
   }
 ]

@@ -124,55 +124,6 @@
 
 // MANROPE
 
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 200;
-//   src: url("../fonts/manrope-v15-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 300;
-//   src: url("../fonts/manrope-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 500;
-//   src: url("../fonts/manrope-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url("../fonts/manrope-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url("../fonts/manrope-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
-// @font-face {
-//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//   font-family: "Manrope";
-//   font-style: normal;
-//   font-weight: 800;
-//   src: url("../fonts/manrope-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-// }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -198,7 +149,7 @@
   font-family: "Sligoil";
 }
 
-// SLIGOIL
+// DIRECTOR
 
 @font-face {
   font-family: "Director";
@@ -237,4 +188,48 @@
 }
 .ff-basalte {
   font-family: "Basalte";
+}
+
+// BAGNARD
+
+@font-face {
+  font-family: "Bagnard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bagnard-latin-400-normal.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-bagnard {
+  font-family: "Bagnard";
+}
+
+@font-face {
+  font-family: "Bagnard Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bagnard-sans-latin-400-normal.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-bagnard-sans {
+  font-family: "Bagnard Sans";
+}
+
+// INSTRUMENT SERIF
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/InstrumentSerif-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/InstrumentSerif-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+.ff-instrument-serif {
+  font-family: "Instrument Serif";
 }

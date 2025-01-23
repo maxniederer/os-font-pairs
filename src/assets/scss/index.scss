@@ -2,6 +2,7 @@
 
 :root {
   --color: hsl(55, 9%, 75%);
+  --color-2: hsl(55, 9%, 67%);
   --primary: hsl(55, 91%, 46%);
   --background: hsl(20, 4%, 14%);
   --font: "Manrope", sans-serif;
@@ -19,6 +20,12 @@
 
 p {
   max-width: 65ch;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .padding {
@@ -121,7 +128,8 @@ main {
 }
 
 .card {
-  border: 1px solid black;
+  // border: 1px solid black;
+  background-color: hsl(30, 7%, 11%);
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
@@ -133,13 +141,40 @@ main {
     font-size: 2.5em;
   }
 
-  *:nth-child(2) {
+  > *:nth-child(2) {
     flex-grow: 1;
+    // opacity: 85%;
+    color: var(--color-2);
   }
 }
 
 .card-credit {
-  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dotted var(--color);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.star {
+  // border: 1px solid var(--color);
+  color: var(--color);
+}
+
+.star:hover {
+  // border-color: var(--primary);
+  color: var(--background);
+  background-color: var(--primary);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+
+  aspect-ratio: 1;
+  width: 30px;
+  border-radius: 100%;
 }
 
 // FOOTER

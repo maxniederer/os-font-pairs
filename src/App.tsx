@@ -18,8 +18,15 @@ fonts.map((font) => {
   }
 });
 
+function mod(n: number, m: number): number {
+  return ((n % m) + m) % m;
+}
+
 let pairs: { head: Font; body: Font }[] = [];
 for (let i = 0; i < headFonts.length; i++) {
+  // let j = Math.floor(Math.random() * bodyFonts.length);
+  // let k = Math.floor(Math.random() * bodyFonts.length);
+  // if (k == j) k = mod(k, bodyFonts.length);
   for (let j = 0; j < bodyFonts.length; j++) {
     if (headFonts[i].name != bodyFonts[j].name) {
       pairs.push({ head: headFonts[i], body: bodyFonts[j] });
@@ -27,7 +34,7 @@ for (let i = 0; i < headFonts.length; i++) {
   }
 }
 console.log(pairs);
-pairs = shuffle(pairs);
+// pairs = shuffle(pairs);
 
 function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length,
