@@ -1,7 +1,14 @@
 import Font from "./Font";
 import text from "../assets/text.json";
-// import { useState } from "react";
-import { BookmarkSimple, Star, Heart } from "@phosphor-icons/react";
+import { useState } from "react";
+import {
+  BookmarkSimple,
+  Star,
+  Heart,
+  MagnifyingGlassPlus,
+  PaperPlaneTilt,
+  ShareFat,
+} from "@phosphor-icons/react";
 
 interface Props {
   headFont: Font;
@@ -11,6 +18,8 @@ interface Props {
 }
 
 function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
+  const [faved, setFaved] = useState(false);
+
   let headText: string = "";
   let ind: number = Math.floor(Math.random() * text["head"].length);
   headText = text["head"][ind];
@@ -24,15 +33,24 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
   // let headSize: string = "";
   // headText.length > 22 ? (headSize = "2em") : (headSize = "3em");
 
+  function heartPressed() {
+    setFaved(!faved);
+  }
+
   return (
     <>
       <div
-        className="card"
+        className={"card" + (faved ? " faved" : "")}
         style={{ color: colorBody, backgroundColor: colorBg }}
       >
-        <h2 className={headFont.class} contentEditable="true">
-          {headText}
-        </h2>
+        <div className="card-head">
+          <h2 className={headFont.class} contentEditable="true">
+            {headText}
+          </h2>
+          <button className="icon btn heart" onClick={heartPressed}>
+            <Heart size={22} weight="fill" />
+          </button>
+        </div>
         <p
           className={bodyFont.class}
           contentEditable="true"
@@ -50,9 +68,12 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
               {bodyFont.name}
             </a>
           </p>
-          <button className="icon heart">
-            <Heart size={22} weight="fill" />
-          </button>
+
+          <a className="icon btn" href="#">
+            {/* <MagnifyingGlassPlus size={22} weight="fill" /> */}
+            {/* <PaperPlaneTilt size={22} weight="fill" /> */}
+            <ShareFat size={22} weight="fill" />
+          </a>
         </div>
       </div>
     </>
