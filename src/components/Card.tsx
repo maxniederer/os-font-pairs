@@ -50,8 +50,8 @@ function Card({ headFont, bodyFont, colorBody, colorBg }: Props) {
               {bodyFont.name}
             </a>
           </p>
-          <button className="icon star">
-            <Heart size={22} />
+          <button className="icon heart">
+            <Heart size={22} weight="fill" />
           </button>
         </div>
       </div>

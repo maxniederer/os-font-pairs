@@ -4,9 +4,9 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="bottom-nav">
+        <div className="bottom-nav list">
           <div>
-            <strong>Fonts</strong>
+            <strong className="foot-header">Fonts</strong>
             <ul className="font-nav">
               {json.map((font) => (
                 <li>
@@ -18,16 +18,11 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <strong>Information</strong>
-            <ul>
+            <strong className="foot-header">Information</strong>
+            <ul className="list">
               <li>
                 <a href="#" className="inline">
                   About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="inline">
-                  Fonts in use
                 </a>
               </li>
               <li>
@@ -44,7 +39,7 @@ function Footer() {
           </div>
         </div>
         <p>
-          fontcupid {new Date().getFullYear()} ♡{" "}
+          {new Date().getFullYear()} ♡{" "}
           <a href="https://copyheart.org/manifesto/" className="inline">
             Copying is an act of love. Please copy and share.
           </a>

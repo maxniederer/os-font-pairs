@@ -1,15 +1,17 @@
 @use "fonts.scss";
 
 :root {
-  --color: hsl(55, 9%, 75%);
-  --color-2: hsl(55, 9%, 67%);
+  --body: hsl(55, 9%, 75%);
+  --body-2: hsl(55, 9%, 67%);
   --primary: hsl(55, 91%, 46%);
-  --background: hsl(20, 4%, 14%);
+  --bg: hsl(20, 4%, 14%);
+  --bg-2: hsl(55, 9%, 27%);
+  --card-bg: hsl(30, 7%, 11%);
   --font: "Manrope", sans-serif;
 
   color-scheme: light dark;
-  color: var(--color);
-  background-color: var(--background);
+  color: var(--body);
+  background-color: var(--bg);
   font-family: var(--font);
 
   font-synthesis: none;
@@ -28,6 +30,8 @@ button {
   }
 }
 
+// HELPER CLASSES
+
 .padding {
   padding-inline: 20px;
 }
@@ -45,12 +49,45 @@ input {
 }
 
 .list {
-  list-style-type: square;
-  margin-left: 24px;
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-block: 4px;
+  }
+}
+
+.bullet-list {
+  margin-left: 12px;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-block: 4px;
+  }
+
+  li::before {
+    content: "↳";
+    position: relative;
+    top: -3px;
+    left: -6px;
+    opacity: 50%;
+  }
 }
 
 .inline {
   text-decoration: underline;
+  transition: box-shadow, color;
+  transition-duration: 150ms;
+  box-shadow: 0px -0px var(--body) inset;
+}
+
+.inline:hover {
+  box-shadow: 0px -0.4em var(--primary) inset;
+  color: var(--primary);
 }
 
 // HEADER
@@ -65,17 +102,17 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--background);
+  z-index: 10;
+  background-color: var(--bg);
 
   nav {
     padding-block: 2px;
-    // height: 28px;
   }
 }
 
 .alert {
   background-color: var(--primary);
-  color: var(--background);
+  color: var(--bg);
   height: 24px;
 
   ul {
@@ -116,7 +153,7 @@ main {
 
 .pairs {
   display: grid;
-  gap: 22px;
+  gap: 28px;
 
   @media (min-width: 800px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -128,23 +165,33 @@ main {
 }
 
 .card {
-  // border: 1px solid black;
-  background-color: hsl(30, 7%, 11%);
-  padding: 24px 28px;
+  background-color: var(--card-bg);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  border-radius: 18px;
   height: 100%;
 
+  box-shadow: 6px 6px var(--bg-2);
+
+  transition: box-shadow;
+  transition-duration: 150ms;
+
   h2 {
-    font-size: 2.5em;
+    font-size: 1.8em;
+
+    @media (min-width: 800px) {
+      font-size: 2.5em;
+    }
   }
 
   > *:nth-child(2) {
     flex-grow: 1;
-    // opacity: 85%;
-    color: var(--color-2);
+    color: var(--body-2);
+  }
+
+  @media (min-width: 800px) {
+    padding: 30px;
   }
 }
 
@@ -152,20 +199,43 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px dotted var(--color);
+  border-top: 1px dotted var(--body);
   margin-top: 10px;
   padding-top: 10px;
 }
 
-.star {
-  // border: 1px solid var(--color);
-  color: var(--color);
-}
+.heart {
+  position: relative;
+  color: var(--bg-2);
+  overflow: hidden;
+  transition-property: color;
+  transition-duration: 200ms;
 
-.star:hover {
-  // border-color: var(--primary);
-  color: var(--background);
-  background-color: var(--primary);
+  svg {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: var(--body-accent);
+    background: linear-gradient(0deg, var(--primary) 50%, var(--card-bg) 50%);
+    transition-property: top;
+    transition-duration: 200ms;
+  }
+
+  &:hover {
+    color: var(--card-bg);
+  }
+
+  &:hover::after {
+    top: -100%;
+  }
 }
 
 .icon {
@@ -181,15 +251,52 @@ main {
 
 footer {
   margin-block: 40px;
+  > :last-child {
+    margin-top: 40px;
+    // text-align: center;
+    // margin-inline: auto;
+  }
 }
 
 .bottom-nav {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  column-gap: 40px;
+  row-gap: 22px;
   margin-bottom: 16px;
+  // max-width: 600px;
+  // margin-inline: auto;
+
+  * {
+    flex-grow: 1;
+  }
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    max-width: none;
+  }
 }
 
 .font-nav {
-  column-count: 3;
   column-gap: 40px;
+  display: grid;
+  // column-count: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (min-width: 450px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    // column-count: 3;
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    // column-count: 4;
+  }
+}
+
+.foot-header {
+  display: block;
+  border-bottom: 1px solid var(--bg-2);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
