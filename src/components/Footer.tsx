@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="bottom-nav list">
+        <div className="padding bottom-nav list">
           <div>
             <strong className="foot-header">Fonts</strong>
             <ul className="font-nav">
@@ -38,7 +38,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <p>
+        <p className="padding">
           {new Date().getFullYear()} ♡{" "}
           <a href="https://copyheart.org/manifesto/" className="inline">
             Copying is an act of love. Please copy and share.

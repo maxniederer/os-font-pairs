@@ -1,4 +1,5 @@
 import json from "../assets/fonts.json";
+import { Link } from "react-router";
 
 function Header() {
   return (
@@ -7,21 +8,21 @@ function Header() {
         <nav className="padding">
           <ul className="flex">
             <li>
-              <a className="strong" href="#">
+              <Link className="strong" to="/">
                 fontcupid
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">fonts</a>
+              <Link to="/">fonts</Link>
             </li>
             <li>
-              <a href="#">pairings</a>
+              <Link to="/">pairings</Link>
             </li>
             <li>
-              <a href="#">about</a>
+              <Link to="/">about</Link>
             </li>
-            <li className="">
-              <a href="#">menu</a>
+            <li>
+              <Link to="/">menu</Link>
             </li>
           </ul>
         </nav>
